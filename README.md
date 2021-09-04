@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Final Result](FAQProject.jpg)
+![Final Result](./images.FAQProject.jpg)
 
 
 ### Links
