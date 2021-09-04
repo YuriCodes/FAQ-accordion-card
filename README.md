@@ -1,5 +1,8 @@
 # Frontend Mentor - FAQ accordion card solution
 
+![FAQ Project](https://user-images.githubusercontent.com/80093500/132083452-d2d343a8-d011-4ca8-ad00-5d1ae6e9b9a4.jpg)
+
+
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
