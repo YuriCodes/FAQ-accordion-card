@@ -1,0 +1,477 @@
+$text-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$text-soft:  hsl(14, 88%, 65%);
+$Background-soft-violet: hsl(273, 75%, 66%);
+$Background-soft-blue: hsl(240, 73%, 65%);
+$neutral-text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+$neutral-text-dark-grayish-blue: hsl(240, 6%, 50%);
+$divider-light-grayish-blue: hsl(240, 5%, 91%);
+$Font-size: 12px;
+$font-weight-bold: 700;
+$font-weight-light: 400;
+$background-image-mobile: url('/images/bg-pattern-mobile.svg');
+$women-image-mobile: url('/images/illustration-woman-online-mobile.svg');
+$ilustration-box-desktop: url('/images/illustration-box-desktop.svg') ;
+$women-image-desktop: url('/images/illustration-woman-online-desktop.svg');
+$background-image-desktop: url('/images/bg-pattern-desktop.svg');
+$arrow-down-image: url('/images/icon-arrow-down.svg');
+$font-family: 'Kumbh Sans', sans-serif;
+
+//general styles
+
+body{
+    background-image: linear-gradient($Background-soft-violet, $Background-soft-blue);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: $font-family; 
+}
+
+.header{
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+h1{
+    font-weight: $font-weight-bold;
+    padding: 5px;
+    margin-top: 5px;
+    color: $neutral-text-very-dark-grayish-blue;
+
+}
+h2, h3{
+    font-weight: $font-weight-light;
+    font-size: $Font-size;
+}
+
+.active{
+    display: block;
+    font-weight: $font-weight-bold;
+    .arrow{
+        transform: rotate(-180deg);
+    }
+}
+
+.arrow{
+    content: $arrow-down-image;
+    transform: rotate(0deg);
+    float: right;
+    margin-top: 5px;
+}
+
+.transform{
+ transform: rotate(-180deg);
+}
+
+.faq{
+    text-align: center;
+
+}
+.questions{
+    font-weight: $font-weight-light;
+    color:$neutral-text-very-dark-grayish-blue;
+}
+.answers{
+    display: none;
+    color: $neutral-text-dark-grayish-blue;
+}
+.card{
+    background-color: white;
+ }
+ .line{
+    background-color: $divider-light-grayish-blue;
+    border: none;
+    height: 1px;
+ }
+
+
+//mobile
+@media screen and (max-width: 470px) {
+    .toppings{
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        display: flex;
+        height: 20vh;
+        width: 100vw;
+    }
+    .womenImg{
+        height: 29vh;
+        background-repeat: no-repeat;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        background-image: $women-image-mobile;
+        margin-top: -5px;
+    }   
+    .shadow{
+        background-image: $background-image-mobile;
+        margin-top: 210px;
+        margin-left: 25px;
+        height: 28vh;
+        width: 78vw;
+        background-repeat: no-repeat;
+    }
+    h2{
+        width: 72vw;
+    }
+    .questions{
+        margin-left: 5px;
+        padding: 10px;
+        margin-top: -20px;
+    }
+  
+    .answers{
+        margin-left: 15px;
+        text-align: left;
+        width: 70vw;
+        margin-top: -15px;
+    }
+
+    .card{
+       height: 75vh;
+       width: 80vw;
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       text-align: left;
+       border-radius: 20px;
+       margin-top: -25px;
+       padding: 10px;
+    }
+   .line{
+       width: 75vw; 
+       margin-left: 10px;
+       margin-top: -15px;
+    }
+    .desktop{
+        display: none;
+    }
+    .container{
+        height: 50vh;
+        display: flex;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+//desktop
+@media screen and (min-width: 980px) {
+
+#mobile{
+    display: none;
+}
+.header{
+    text-align: center;
+    height: 5vh;
+    width: 75vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    margin-bottom: 28px;
+    margin-top: 25px;
+    padding: 15px;
+    
+}
+.desktop{
+    height: 0;
+    width: 10vw;
+    margin-left: -50px; 
+    overflow:hidden; 
+}
+.box{
+    background-image: $ilustration-box-desktop;
+    background-repeat: no-repeat;
+    height: 20vh;
+    z-index: 1;
+    width: 20vw;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -25px;
+}
+.womenImg{
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 50vw;
+    position: absolute;
+    background-image: $women-image-desktop;
+    margin-top: 5px;
+    margin-left: -51px;
+   border-bottom-left-radius: 19.9em;
+}
+
+.shadow{
+    background-image: $background-image-desktop;
+    margin-top: -340px;
+    margin-left: -530px;
+    height:130vh;
+    width: 90vw ;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+h2{
+    width: 52vw;
+}
+.questions{
+    margin-left: 480px;
+    padding: 20px;
+    margin-top: -15px;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 1;
+}
+.questions:hover{
+    color: $text-soft;
+}
+.answers{
+    margin-left: 500px;
+    margin-right: 50px;
+    text-align: justify;
+    width: 25vw;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.card{
+   height: 70vh;
+   width: 70vw;
+   text-align: left;
+   border-radius: 20px;
+   margin-top: -25px;
+   padding: 10px;
+   margin: auto;
+   padding: 2rem;
+   overflow: hidden;
+   direction: ltr;
+}
+
+.mobileNoShow{
+    width: 50vw;
+}
+
+.line{
+   width: 27vw;
+   margin-left: 500px;
+   margin-top: -15px;
+}
+
+.container{
+    height: 40vh;
+    width: 65vw;
+    display: flex;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    margin-top: 15px;
+    z-index: 1;
+}
+}
+
+//other media queries to tackle anything in between
+
+@media screen and (min-width: 470px) and (max-width: 760px){
+    .toppings{
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        display: flex;
+        height: 20vh;
+        width: 100vw;
+    }
+    .womenImg{
+        height: 29vh;
+        background-repeat: no-repeat;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin-left: 90px;
+        position: relative;
+        background-image: $women-image-mobile;
+        margin-top: -5px;
+    }   
+    .shadow{
+        background-image: $background-image-mobile;
+        margin-top: 210px;
+        margin-left: 25px;
+        height: 28vh;
+        width: 78vw;
+        background-repeat: no-repeat;
+    }
+    h2{
+        width: 72vw;
+    }
+    .questions{
+        margin-left: 5px;
+        padding: 10px;
+        margin-top: -20px;
+    }
+  
+    .answers{
+        margin-left: 15px;
+        text-align: left;
+        width: 70vw;
+        margin-top: -15px;
+    }
+
+    .card{
+       height: 75vh;
+       width: 80vw;
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       text-align: left;
+       border-radius: 20px;
+       margin-top: -25px;
+       padding: 10px;
+    }
+   .line{
+       width: 75vw; 
+       margin-left: 10px;
+       margin-top: -15px;
+    }
+    .desktop{
+        display: none;
+    }
+    .container{
+        height: 50vh;
+        display: flex;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 979px){
+    #mobile{
+        display: none;
+    }
+    .header{
+        text-align: center;
+        height: 5vh;
+        width: 75vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content:center;
+        margin-bottom: 28px;
+        margin-top: 25px;
+        padding: 15px;
+        margin-left: 55px;
+        
+    }
+    .desktop{
+        height: 0;
+        width: 10vw;
+        margin-left: -50px; 
+        overflow:hidden; 
+    }
+    .box{
+        background-image: $ilustration-box-desktop;
+        background-repeat: no-repeat;
+        height: 20vh;
+        z-index: 1;
+        width: 20vw;
+        position: absolute;
+        margin-top: 130px;
+        margin-left: -25px;
+    }
+    .womenImg{
+        height: 550px;
+        background-repeat: no-repeat;
+        width: 550px;
+        position: absolute;
+        background-image: $women-image-desktop;
+        margin-top: 5px;
+        margin-left: -50px;
+       border-bottom-left-radius: 19.9em;
+    }
+    
+    .shadow{
+        background-image: $background-image-desktop;
+        margin-top: -340px;
+        margin-left: -550px;
+        height:140vh;
+        width: 105vw;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    
+    h2{
+        width: 52vw;
+    }
+    .questions{
+        margin-left: 480px;
+        padding: 20px;
+        margin-top: -15px;
+        cursor: pointer;
+        font-size: 15px;
+        z-index: 1;
+    }
+    .questions:hover{
+        color: $text-soft;
+    }
+    .answers{
+        margin-left: 500px;
+        margin-right: 50px;
+        text-align: justify;
+        width: 25vw;
+        margin-top: -25px;
+        margin-bottom: 30px;
+    }
+    
+    .card{
+       height: 70vh;
+       width: 85vw;
+       text-align: left;
+       border-radius: 20px;
+       margin-top: -25px;
+       padding: 10px;
+       margin: auto;
+       padding: 2rem;
+       overflow: hidden;
+       direction: ltr;
+    }
+    
+    .mobileNoShow{
+        width: 50vw;
+    }
+    
+    .line{
+       width: 27vw;
+       margin-left: 500px;
+       margin-top: -15px;
+    }
+    
+    .container{
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content:flex-end;
+        margin-top: 15px;
+        margin-left: -120px;
+        z-index: 1;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
