@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/faqaccordioncardchallenge-vFudbA_Gp)
 - Live Site URL: (https://faq-accordion-card-challenge.netlify.app/)
 
 ## My process
